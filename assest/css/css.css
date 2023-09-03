@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.section{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+body{
+    background-color: #333333;
+}
+
+/* buttons */
+.inputField{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: inputField;
+
+}
+.pi{
+    
+    grid-area: pi;
+}
+.power{
+    grid-area: power;
+}
+.persentage{
+    grid-area: persentage;
+}
+.devide{
+    grid-area: devide;
+}
+/* ------ */
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.multi{
+    grid-area: multiple;
+}
+/* ------ */
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.additon{
+    grid-area: additon;
+}
+/* ------- */
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.mine{
+    grid-area: mine;
+}
+/* ---------- */
+.dot{
+    grid-area: dot-dot;
+}
+.zero{
+    grid-area: zero-0;
+}
+.del{
+    grid-area: del;
+}
+.equal{
+    grid-area: equal;
+}
+
+/* set buttons */
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    grid-template-areas: "inputField inputField inputField inputField" 
+                         "pi power persentage devide"
+                         "seven eight nine multiple"
+                         "four five six addition"
+                         "one two three mine"
+                         "dot-dot zero-0 del equal";  
+    background-color: #212121;
+    width: 500px;
+    height: 90vh;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    border: 2px solid rebeccapurple;
+    padding: 10px;
+    border-radius: 10px;
+}
+.calculator>span{
+    background-color: #1a3e4a;
+}
+.inputField-box{
+
+    height: 70px;
+    width: 480px;
+    background-color: #35776d;
+    position: absolute;
+    font-size: larger;
+    border: none;
+}
+
+
+.inputField>input:focus-visible {
+    outline: none;
+}
+
+/* hide input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    appearance: textfield;
+}
+
+/* center text */
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 30px;
+}
